@@ -382,7 +382,7 @@ class GoogleDriveHelper:
                 msg += f'\n<b>Type: </b><code>Folder</code>'
                 msg += f'\n<b>SubFolders: </b><code>{self.total_folders}</code>'
                 msg += f'\n<b>Files: </b><code>{self.total_files}</code>'
-                msg += f'\n<b>html : </b><a href="<code>{url}</code>"><button class="button button1">play Link </button></a>
+                msg += f'\n<b>html : </b><a href="<code>{url}</code>"><button class="button button1">play Link </button></a>'
                 buttons = button_build.ButtonMaker()
                 if SHORTENER is not None and SHORTENER_API is not None:
                     surl = requests.get(f'https://{SHORTENER}/api?api={SHORTENER_API}&url={durl}&format=text').text
